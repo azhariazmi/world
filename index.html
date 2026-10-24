@@ -1,1 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="#120000" />
+    <meta name="description" content="Welcome To My World - Azhari Azmi Theater Experience" />
+    <title>Welcome To My World | Azhari Azmi</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet" />
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <!-- Step 1: Initial User Gesture Screen (Complies with Web Audio Autoplay Policy) -->
+    <div class="entrance-overlay" id="entranceOverlay">
+      <div class="door-badge">
+        <img src="https://i.ibb.co/3mM9nG0f/1000000682.png" alt="Profile Badge" />
+      </div>
+      <h1 class="entrance-title">Azhari Azmi</h1>
+      <p class="entrance-sub">An Immersive Experience</p>
+      <button class="start-btn" id="startBtn">Click Here!</button>
+    </div>
+
+    <!-- Step 2: Main Theater Stage -->
+    <div class="theater-stage">
+      <canvas id="dustCanvas"></canvas>
+      <div class="spotlight-cone" id="spotlightCone"></div>
+      <div class="stage-floor"></div>
+
+      <div class="content-wrapper">
+        <div class="text-box">
+          <div class="line line1" id="line1"></div>
+          <div class="line line2" id="line2"></div>
+        </div>
+
+        <div class="portrait-wrapper" id="portraitWrapper">
+          <img class="photo" src="https://i.ibb.co/YBxsB9Kp/azhari-bin-azmi.png" alt="Azhari Azmi" />
+        </div>
+
+        <div class="cta-container" id="ctaContainer">
+          <button class="enter-btn" id="enterBtn" type="button">
+            <span>Enter My World</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="curtain-view" id="curtainView">
+        <div class="curtain-panel curtain-left">
+          <div class="curtain-fringe"></div>
+        </div>
+        <div class="curtain-panel curtain-right">
+          <div class="curtain-fringe"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Step 3: Fullscreen Embedded Web Application Viewport -->
+    <div class="app-viewport" id="appViewport">
+      <div class="app-loader">
+        <div class="spinner"></div>
+        <span>ENTERING MY WORLD</span>
+      </div>
+      <iframe id="appFrame" title="Azhari Azmi Profile" allow="fullscreen; autoplay; clipboard-write; encrypted-media" sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-modals"></iframe>
+    </div>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
 
